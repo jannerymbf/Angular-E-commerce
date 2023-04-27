@@ -8,6 +8,9 @@ import { ProductsComponent } from './pages/products/products.component';
 import { DetailComponent } from './pages/detail/detail.component';
 import { LoginComponent } from './pages/login/login.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ShowProductsComponent } from './components/show-products/show-products.component';
+import { CardPromoComponent } from './components/card-promo/card-promo.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { SignupComponent } from './pages/signup/signup.component';
     ProductsComponent,
     DetailComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    HeaderComponent,
+    ShowProductsComponent,
+    CardPromoComponent
   ],
   imports: [
     BrowserModule,
