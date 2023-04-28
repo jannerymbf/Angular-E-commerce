@@ -1,1 +1,9 @@
-<p>card-promo works!</p>
+<article class="promo-card">
+  <img [src]="promoCard.thumbnail" alt="Promo image">
+  <div>
+    <h1>{{ promoCard.title }}</h1>
+    <h3>Before ${{ promoCard.price }}</h3>
+    <h2>Now <span>${{ getPromoPrice(promoCard.price, promoCard.discountPercentage) }}</span></h2>
+    <img src="../assets/shopping-cart.png" alt="">
+  </div>
+</article>
