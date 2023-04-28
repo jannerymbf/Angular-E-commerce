@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-promos',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PromosComponent implements OnInit {
 
-  constructor() { }
+  promoProducts: any[] = [];
+
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
+    this.getPromoProducts();
   }
 
+  getPromoProducts() {
+    return this.productService.getAllProducts().subscribe((res: any) => {
+      this.promoProducts = res.filter((e: any) => e.discountPercentage > 15)
+      return this.promoProducts;
+    })
+  }
 }

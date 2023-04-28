@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PromosComponent } from './pages/promos/promos.component';
@@ -11,6 +12,7 @@ import { SignupComponent } from './pages/signup/signup.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ShowProductsComponent } from './components/show-products/show-products.component';
 import { CardPromoComponent } from './components/card-promo/card-promo.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { CardPromoComponent } from './components/card-promo/card-promo.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
