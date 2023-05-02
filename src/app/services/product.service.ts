@@ -24,4 +24,15 @@ export class ProductService {
       map((res: any) => res.products)
     );
   }
+
+  searchProducts(product: string) {
+    const API_URL_search = `${this.API_URL}/search`;
+    const params = {
+      q: product
+    };
+
+    return this.http.get(API_URL_search, {params}).pipe(
+      map((res: any) => res.products)
+    );
+  }
 }
