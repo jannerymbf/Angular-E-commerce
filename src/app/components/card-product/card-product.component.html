@@ -1,6 +1,6 @@
 <article class="card-product">
   <img class="card-product__image" [src]="product.thumbnail" alt="product-image">
-  <h1 class="card-product__name">{{ product.title }}</h1>
+  <h1 class="card-product__name">{{ product.title | titlecase }}</h1>
   <h2 class="card-product__price">$ {{ product.price }}</h2>
   <img class="card-product__cart" src="../assets/shopping-cart.png" alt="shopping-cart-icon">
 </article>
