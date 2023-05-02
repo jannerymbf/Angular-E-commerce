@@ -1,7 +1,6 @@
 <app-header></app-header>
 <section>
-  <select name="category" id="category">
-    <option>Select a category</option>
+  <select name="category" id="category" [(ngModel)]="category" (change)="getProductsBycategory(category)">
     <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
   </select>
 </section>

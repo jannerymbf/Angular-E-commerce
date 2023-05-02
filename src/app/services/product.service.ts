@@ -16,4 +16,12 @@ export class ProductService {
       map((res: any) => res.products)
     );
   }
+
+  getProductsByCategory(category: string) {
+    const API_URL_category = `${this.API_URL}/category/${category}`;
+
+    return this.http.get(API_URL_category).pipe(
+      map((res: any) => res.products)
+    );
+  }
 }

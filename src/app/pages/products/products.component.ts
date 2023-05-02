@@ -10,6 +10,7 @@ export class ProductsComponent implements OnInit {
 
   products: any[] = [];
   categories: any[] = [];
+  category: string = '';
 
   constructor(private productService: ProductService) { }
 
@@ -29,6 +30,12 @@ export class ProductsComponent implements OnInit {
     this.productService.getAllProducts().subscribe((res) => {
       allCategories = res.map((e: any) => e.category);
       this.categories = [...new Set(allCategories)];
+    })
+  }
+
+  getProductsBycategory(category: string) {
+    return this.productService.getProductsByCategory(category).subscribe((res) => {
+      return this.products = res;
     })
   }
 

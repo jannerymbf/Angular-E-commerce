@@ -14,6 +14,7 @@ import { ShowProductsComponent } from './components/show-products/show-products.
 import { CardPromoComponent } from './components/card-promo/card-promo.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CardProductComponent } from './components/card-product/card-product.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CardProductComponent } from './components/card-product/card-product.com
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
