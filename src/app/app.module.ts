@@ -13,6 +13,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ShowProductsComponent } from './components/show-products/show-products.component';
 import { CardPromoComponent } from './components/card-promo/card-promo.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CardProductComponent } from './components/card-product/card-product.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HttpClientModule } from '@angular/common/http';
     SignupComponent,
     HeaderComponent,
     ShowProductsComponent,
-    CardPromoComponent
+    CardPromoComponent,
+    CardProductComponent
   ],
   imports: [
     BrowserModule,
