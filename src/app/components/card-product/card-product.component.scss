@@ -1,0 +1,36 @@
+@import '../styles/variables.scss';
+
+@mixin text-style {
+  font-size: 1.4rem;
+  color: $color-neutral-dark;
+  text-align: center;
+}
+
+.card-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+
+  &__image {
+    width: 100%;
+    max-height: 12em;
+    object-fit: cover;
+  }
+
+  &__name {
+    font-weight: 600;
+    @include text-style();
+  }
+
+  &__price {
+    font-weight: 400;
+    @include text-style();
+  }
+
+  &__cart {
+    width: 20px;
+    height: 20px;
+  }
+}
