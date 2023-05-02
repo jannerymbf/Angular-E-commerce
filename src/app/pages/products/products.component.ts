@@ -34,9 +34,13 @@ export class ProductsComponent implements OnInit {
   }
 
   getProductsBycategory(category: string) {
-    return this.productService.getProductsByCategory(category).subscribe((res) => {
-      return this.products = res;
-    })
+    if(category == '') {
+      return this.getProducts();
+    } else {
+      return this.productService.getProductsByCategory(category).subscribe((res) => {
+        return this.products = res;
+      })
+    }
   }
 
 }
