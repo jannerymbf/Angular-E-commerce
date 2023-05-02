@@ -6,59 +6,68 @@
 
 .promo-card {
   width: 100%;
-  padding: 1.5em;
+  // height: 15em;
+  padding: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  background-color: $color-secondary-light;
+  gap: 15px;
+  // border-radius: 10px;
+  // background-color: $color-secondary-light;
 
   &__image {
     width: 30%;
+    max-height: 10em;
     border-radius: 10px;
     object-fit: cover;
-    @include card-size;
+    //@include card-size;
   }
 
   &__info {
-    width: 40%;
-    padding: 10px;
+    width: 70%;
+    // padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2x;
+    gap: 5px;
     border-radius: 10px 0 0 10px;
-    background-color: $color-neutral-light;
-    @include card-size;
+    // background-color: $color-neutral-light;
+    //@include card-size;
 
     h1 {
-      font-size: 1.2rem;
+      font-size: 1.8rem;
       font-weight: 700;
       color: $color-primary;
     }
 
     h3 {
       padding-left: 10px;
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight: 400;
       color: $color-neutral-dark;
     }
 
     h2 {
-      padding-left: 10px;
-      font-size: 1.2rem;
+      width: 100%;
+      padding: 5px 10px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+      background-color: $color-neutral-light;
+      font-size: 1.6rem;
       font-weight: 600;
       color: $color-neutral-dark;
 
       span {
         color: $color-primary;
       }
-    }
 
-    img {
-      align-self: flex-end;
-      width: 15px;
-      height: 15px;
+      img {
+        width: 18px;
+        height: 18px;
+      }
     }
   }
 }

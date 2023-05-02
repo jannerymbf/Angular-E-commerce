@@ -1,5 +1,5 @@
 <app-header></app-header>
 <app-show-products></app-show-products>
-<div>
-  <app-card-promo *ngFor="let promo of promoProducts" [promoCard]="promo"></app-card-promo>
-</div>
+<section class="promos-container">
+  <app-card-promo class="promos-container__card" *ngFor="let promo of promoProducts" [promoCard]="promo"></app-card-promo>
+</section>

@@ -1,0 +1,22 @@
+
+.promos-container {
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+  justify-content: center;
+  gap: 20px;
+
+  // & .promos-container__card:nth-child(n+1) {
+  //   background-color: #7855FB;
+  // }
+
+  & .promos-container__card:nth-child(n) {
+    background-color: #FFF8BD;
+  }
+
+  &__card {
+    border-radius: 10px;
+  }
+}
