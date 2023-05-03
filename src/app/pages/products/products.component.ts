@@ -23,10 +23,12 @@ export class ProductsComponent implements OnInit {
 
   getProducts() {
     if(this.router.url === '/products') {
+      //to show all products
       this.productService.getAllProducts().subscribe((res: any) => {
         return this.products = res;
       })
     } else {
+      // to show serached products
       this.route.params.subscribe(params => {
         return this.productService.searchProducts(params['searchProduct']).subscribe(res => {
           return this.products = res;
