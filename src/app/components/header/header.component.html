@@ -1,8 +1,8 @@
 <div class="header">
   <img class="header__logo" src="../assets/logo.png" alt="logo">
   <div class="header__search-bar">
-    <input type="text" placeholder="Search products..." [(ngModel)]="productSearched" (keyup.enter)="getProductsSearched()">
-    <img src="../assets/search.png" alt="searchButton" (click)="getProductsSearched()">
+    <input type="text" placeholder="Search products..." [(ngModel)]="productSearched" (keyup.enter)="searchProduct()">
+    <img src="../assets/search.png" alt="searchButton" (click)="searchProduct()">
   </div>
   <img class="header__user" src="../assets/user.png" alt="user">
   <img class="header__cart" src="../assets/shopping-cart.png" alt="shopping Cart">
