@@ -21,5 +21,15 @@
     }
   }
 
+  &__share-sites {
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    gap: 10px;
 
+    img {
+      width: 25px;
+      height: 25px;
+    }
+  }
 }
