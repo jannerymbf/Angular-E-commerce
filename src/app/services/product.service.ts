@@ -35,4 +35,10 @@ export class ProductService {
       map((res: any) => res.products)
     );
   }
+
+  getSingleProduct(id: string) {
+    const API_URL_single = `${this.API_URL}/${id}`;
+
+    return this.http.get(API_URL_single);
+  }
 }
