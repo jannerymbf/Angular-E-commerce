@@ -1,4 +1,4 @@
-<article class="card-product">
+<article class="card-product" (click)="goToProductDetails()">
   <img class="card-product__image" [src]="product.thumbnail" alt="product-image">
   <h1 class="card-product__name">{{ product.title | titlecase }}</h1>
   <h2 class="card-product__price">$ {{ product.price }}</h2>
