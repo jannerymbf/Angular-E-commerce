@@ -1,41 +1,43 @@
 <app-show-products></app-show-products>
-<section>
-  <img [src]="productCard.thumbnail" alt="product-image">
-  <h1>{{ productCard.title }}</h1>
-</section>
-<section>
-  <img src="../assets/twitter.png" alt="twitter-icon">
-  <img src="../assets/facebook.png" alt="facebook-icon">
-</section>
-<section>
-  <table>
-    <tr>
-      <th>Description</th>
-      <td>{{ productCard.description }}</td>
-    </tr>
-    <tr>
-      <th>Category</th>
-      <td>{{ productCard.category | titlecase }}</td>
-    </tr>
-    <tr>
-      <th>Brand</th>
-      <td>{{ productCard.brand }}</td>
-    </tr>
-    <tr>
-      <th>Rating</th>
-      <td>{{ productCard.rating }}</td>
-    </tr>
-    <tr>
-      <th>Price</th>
-      <td>$ {{ productCard.price }}</td>
-    </tr>
-  </table>
-</section>
-<section>
-  <div>
-    <button>-</button>
-    <span>0</span>
-    <button>+</button>
-  </div>
-  <button>Add to cart <img src="" alt="shopping-cart icon"></button>
+<section class="detail">
+  <section class="detail__main-info">
+    <img [src]="productCard.thumbnail" alt="product-image">
+    <h1>{{ productCard.title }}</h1>
+  </section>
+  <section>
+    <img src="../assets/twitter.png" alt="twitter-icon">
+    <img src="../assets/facebook.png" alt="facebook-icon">
+  </section>
+  <section>
+    <table>
+      <tr>
+        <th>Description</th>
+        <td>{{ productCard.description }}</td>
+      </tr>
+      <tr>
+        <th>Category</th>
+        <td>{{ productCard.category | titlecase }}</td>
+      </tr>
+      <tr>
+        <th>Brand</th>
+        <td>{{ productCard.brand }}</td>
+      </tr>
+      <tr>
+        <th>Rating</th>
+        <td>{{ productCard.rating }}</td>
+      </tr>
+      <tr>
+        <th>Price</th>
+        <td>$ {{ productCard.price }}</td>
+      </tr>
+    </table>
+  </section>
+  <section>
+    <div>
+      <button>-</button>
+      <span>0</span>
+      <button>+</button>
+    </div>
+    <button>Add to cart <img src="" alt="shopping-cart icon"></button>
+  </section>
 </section>

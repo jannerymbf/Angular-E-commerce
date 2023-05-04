@@ -1,0 +1,25 @@
+.detail {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+
+  &__main-info {
+    width: 80%;
+    max-width: 200px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: #434343;
+      text-align: center;
+    }
+  }
+
+
+}
