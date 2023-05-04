@@ -56,4 +56,53 @@
       }
     }
   }
+
+  &__shopping {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+
+    &__number-items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+
+      button {
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        background-color: #d9d9d9;
+        font-size: 1.6rem;
+        color: #434343;
+      }
+
+      span {
+        font-size: 1.6rem;
+        color: #434343;
+      }
+    }
+
+    &__add-items-btn {
+      width: 60%;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border: none;
+      border-radius: 15px;
+      background-color: #7855FB;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #fff;
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
 }
