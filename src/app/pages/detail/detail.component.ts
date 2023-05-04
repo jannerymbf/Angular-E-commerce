@@ -12,7 +12,8 @@ import { ProductService } from 'src/app/services/product.service';
 export class DetailComponent implements OnInit {
 
   id!: string;
-  productCard!: Product;
+  productCard: any = {};
+  // productCard!: Product; --> se está demorando en cargar y sale error
 
   constructor(private route: ActivatedRoute, private productService: ProductService) { }
 
