@@ -5,8 +5,8 @@
     <h1>{{ productCard.title | titlecase }}</h1>
   </section>
   <section class="detail__share-sites">
-    <img src="../assets/twitter.png" alt="twitter-icon">
-    <img src="../assets/facebook.png" alt="facebook-icon">
+    <img src="../assets/twitter.png" alt="twitter-icon" (click)="shareOnTwitter()">
+    <img src="../assets/facebook.png" alt="facebook-icon" (click)="shareOnFacebook()">
   </section>
   <section class="detail__items-table">
     <table>
