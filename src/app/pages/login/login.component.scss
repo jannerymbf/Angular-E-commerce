@@ -55,4 +55,16 @@
       color: #fff;
     }
   }
+
+  &__link-to-signup {
+    p {
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: #7855FB;
+
+      a {
+        color: #434343;
+      }
+    }
+  }
 }
